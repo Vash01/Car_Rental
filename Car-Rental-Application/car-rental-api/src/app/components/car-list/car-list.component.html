@@ -1,0 +1,44 @@
+<!-- car-list.component.html -->
+
+<h2>Car List</h2>
+
+<!-- Search Form -->
+<form [formGroup]="searchForm" (ngSubmit)="searchCars()">
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="maker">Maker:</label>
+      <input type="text" id="maker" class="form-control" formControlName="maker">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="modelYear">Model:</label>
+      <input type="text" id="modelYear" class="form-control" formControlName="modelYear">
+    </div>
+    <!-- <div class="form-group col-md-3">
+      <label for="rentalPrice">Rental Price:</label>
+      <input type="text" id="rentalPrice" class="form-control" formControlName="rentalPrice">
+    </div> -->
+    <div class="form-group col-md-3">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+  </div>
+</form>
+
+<!-- Car List Table -->
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Maker</th>
+      <th>Model Year</th>
+      <th>Rental Price (per day)</th>
+      <th>Action:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of cars">
+      <td>{{ car.maker }}</td>
+      <td>{{ car.modelYear }}</td>
+      <td>Rs.1000</td> <!-- Assuming a static rental price for demonstration -->
+      <td><button class="btn btn-outline-success" (click)="showRentalAgreement(car)">Rent</button></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,84 @@
+
+<!-- rental-agreement.component.html -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+      <!-- Card Container -->
+      <div class="card"
+      [ngClass]="{'border-error':rentalForm.invalid && rentalForm.touched, 'border-success': rentalForm.valid}">
+
+        <div class="card-body">
+
+          <h2 class="mb-4">Rental Agreement for {{ selectedCar.maker }} {{ selectedCar.modelYear }}</h2>
+
+          <!-- Form -->
+          <form [formGroup]="rentalForm" (ngSubmit)="submitForm()">
+            <!-- Car Details-->
+            <section class="mb-4">
+              <h3>Car Details</h3>
+              <div class="form-group">
+                <label for="maker">Maker:</label>
+                <input type="text" id="Maker" class="form-control" [value]="selectedCar.maker" readonly />
+              </div>
+              <div class="form-group">
+                <label for="modelYar">Model Year:</label>
+                <input type="number" id="ModelYear" class="form-control" [value]="selectedCar.modelYear" readonly />
+              </div>
+              <div class="form-group">
+                <label for="carName">Car Name:</label>
+                <input type="text" id="carName" class="form-control" [value]="selectedCar.carName" readonly />
+              </div>
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" id="Description" class="form-control" [value]="selectedCar.description" readonly />
+              </div>
+              <div class="form-group">
+                <label for="colorName">Color:</label>
+                <input type="text" id="coloName" class="form-control" [value]="selectedCar.colorName" readonly />
+              </div>
+            </section>
+
+            <!-- Rental Details -->
+            <section class="mb-4">
+              <h3>Rental Details</h3>
+              <div class="form-group">
+                <label for="rentalDuration">Rental Duration (in days):</label>
+                <input type="number" id="rentalDuration" class="form-control" formControlName="rentalDuration"  />
+                <small *ngIf="rentalForm.get('rentalDuration')?.invalid && rentalForm.get('rentalDuration')?.touched"
+                      class="text-danger">Rental Duration is required</small>
+              </div>
+              <div class="form-group">
+                <label for="totalCost" value="totalCost">Total Cost:</label>
+                <input type="number" id="totalCost" class="form-control" [value]="totalCost" readonly />
+              </div>
+            </section>
+
+            <!-- User Details -->
+            <div *ngIf="(accountService.user$ | async) as user" class="mb-4">
+              <h3>User Details</h3>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="Name" class="form-control" [value]="user.name" readonly />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="Email" class="form-control" [value]="user.email" readonly />
+              </div>
+              <!-- Add more user details as needed -->
+            </div>
+            </form>
+            <!-- Submit and Back Buttons -->
+            <div class="form-group">
+              <button class="btn btn-outline-success" (click)="submitForm()">Submit</button>
+              <button class="btn btn-outline-danger ml-2" (click)="rentalAgreement()">Back</button>
+            </div>
+
+        </div>
+      </div>
+      <!-- End Card Container -->
+
+    </div>
+  </div>
+</div>
+

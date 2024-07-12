@@ -1,0 +1,83 @@
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+  
+        <!-- Card Container -->
+        <div class="card"
+        [ngClass]="{'border-error':rentalForm.invalid && rentalForm.touched, 'border-success': rentalForm.valid}">
+  
+          <div class="card-body" >
+        <div *ngIf="(accountService.user$ | async) as user">
+            <h2 class="mb-4">Add Car </h2>
+  
+            <!-- Form -->
+            <form [formGroup]="rentalForm" (ngSubmit)="submitForm(user.email)">
+              <!-- Car Details-->
+              <section class="mb-4">
+                <h3>Car Details</h3>
+                <div formGroupName="car">
+                <div class="form-group">
+                  <label for="maker">Maker:</label>
+                  <input type="text" id="maker" class="form-control" formControlName="maker" />
+                  <small *ngIf="rentalForm.get('maker')?.invalid && rentalForm.get('maker')?.touched"
+                        class="text-danger">Car Maker is required</small>
+                </div>
+                <div class="form-group">
+                  <label for="modelYear">Model Year:</label>
+                  <input type="number" id="modelYear" class="form-control" formControlName="modelYear" />
+                  <small *ngIf="rentalForm.get('modelYear')?.invalid && rentalForm.get('modelYear')?.touched"
+                        class="text-danger">Model Year is required</small>
+                </div>
+                <div class="form-group">
+                  <label for="carName">Car Name:</label>
+                  <input type="text" id="carName" class="form-control"  formControlName="carName"/>
+                  <small *ngIf="rentalForm.get('carName')?.invalid && rentalForm.get('carName')?.touched"
+                        class="text-danger">Car Name is required</small>
+                </div>
+                <div class="form-group">
+                  <label for="description">Description:</label>
+                  <input type="text" id="Description" class="form-control" formControlName="description" />
+                  <small *ngIf="rentalForm.get('description')?.invalid && rentalForm.get('description')?.touched"
+                        class="text-danger">Description  is required</small>
+                </div>
+                <div class="form-group">
+                  <label for="colorName">Color:</label>
+                  <input type="text" id="colorName" class="form-control" formControlName="colorName" />
+                  <small *ngIf="rentalForm.get('colorName')?.invalid && rentalForm.get('colorName')?.touched"
+                        class="text-danger">Color Name is required</small>
+                </div>
+            </div>
+              </section>
+  
+              <!-- Rental Details -->
+              <section class="mb-4">
+                <h3>Rental Details</h3>
+                
+                <div class="form-group">
+                  <label for="totalCost" value="totalCost">Cost Per day:</label>
+                  <input type="number" id="totalCost" class="form-control"  [value]="1000" readonly/>
+                </div>
+                    <label for="CustomerName" value="CustomerName">Customer Name</label>
+                    <input type="text" id="CustomerName" class="form-control" formControlName="customerName" />
+                    <small *ngIf="rentalForm.get('customerName')?.invalid && rentalForm.get('customerName')?.touched"
+                      class="text-danger">Customer Name is required</small>
+                  
+              </section>
+  
+              </form>
+              <!-- Submit and Back Buttons -->
+              <div class="form-group">
+                <button class="btn btn-outline-success" (click)="submitForm(user.email)">Submit</button>
+                <button class="btn btn-outline-danger ml-2" routerLink="/dashboard/admin">Back</button>
+              </div>
+              </div>
+          </div>
+        </div>
+        <!-- End Card Container -->
+  
+      </div>
+    </div>
+  </div>
+  
+  

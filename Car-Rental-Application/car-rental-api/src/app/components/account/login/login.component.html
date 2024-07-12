@@ -1,0 +1,39 @@
+
+
+<div class="login-container"
+[ngClass]="{'border-error':loginForm.invalid && loginForm.touched, 'border-success': loginForm.valid}">
+  
+  <h2 class="mb-4">Login</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="login()" class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" id="email" formControlName="email" name="email" class="form-control" required>
+      <small *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched"
+                    class="text-danger">Email is required</small>
+                
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password:</label>
+      <input type="password" id="password" formControlName="password" name="password" class="form-control" required>
+      <small *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+                    class="text-danger">Password is required</small>
+                
+    </div>
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+    <!-- <button type="submit" class="btn btn-primary" [disabled]="!isFormValid()">Login</button> -->
+
+    <div class="mb-2 buttons">
+      <input type="submit" value="Login" class="login-btn"
+      [disabled]="!isFormValid()"  >
+  <input class ="mb-2" type="reset" value="Clear" class="reset-btn">
+</div>
+<h6 class="h6 mt-1"><small>OR</small></h6>
+    <h6 class="h6 mt-1"><small>New user?</small></h6>
+    <div class="col-12 mt-3">
+      <a routerLink="/account/register" class="reg-btn">Register</a>
+    </div>
+  </form>
+</div>
+
+
+

@@ -1,0 +1,10 @@
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\bin\Debug\netcoreapp3.1\SharedDetails.deps.json
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\bin\Debug\netcoreapp3.1\SharedDetails.dll
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\bin\Debug\netcoreapp3.1\SharedDetails.pdb
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\obj\Debug\netcoreapp3.1\SharedDetails.csproj.AssemblyReference.cache
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\obj\Debug\netcoreapp3.1\SharedDetails.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\obj\Debug\netcoreapp3.1\SharedDetails.AssemblyInfoInputs.cache
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\obj\Debug\netcoreapp3.1\SharedDetails.AssemblyInfo.cs
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\obj\Debug\netcoreapp3.1\SharedDetails.csproj.CoreCompileInputs.cache
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\obj\Debug\netcoreapp3.1\SharedDetails.dll
+C:\Users\vanshikasingh\source\repos\CarRentalApplication\SharedDetails\obj\Debug\netcoreapp3.1\SharedDetails.pdb

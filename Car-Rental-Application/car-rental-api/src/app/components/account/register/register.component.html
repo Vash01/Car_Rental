@@ -1,0 +1,52 @@
+
+<div class="register-container"
+[ngClass]="{'border-error':RegisterForm.invalid && RegisterForm.touched, 'border-success': RegisterForm.valid}">
+  
+  <h2 class="mb-4">Register</h2>
+    <form [formGroup]="RegisterForm" (ngSubmit)="register()">
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="name" id="name" formControlName="name" name="name" class="form-control" required>
+        <small *ngIf="RegisterForm.get('name')?.invalid && RegisterForm.get('name')?.touched"
+                      class="text-danger">Name is required</small>
+                  
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" formControlName="email" name="email" class="form-control" required>
+        <small *ngIf="RegisterForm.get('email')?.invalid && RegisterForm.get('email')?.touched"
+                      class="text-danger">Email is required</small>
+                  
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" id="password" formControlName="password" name="password" class="form-control" required>
+        <small *ngIf="RegisterForm.get('password')?.invalid && RegisterForm.get('password')?.touched"
+                      class="text-danger">Password is required</small>
+                  
+      </div>
+      
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+      <!-- <div class="form-group">
+        <label for="isApprover">
+          <input type="checkbox"  id="isApprover" name="isApprover" [(ngModel)]="user.isApprover">
+          Is Approver
+        </label>
+      </div> -->
+      <div class="mb-2 buttons">
+      <input type="submit" value="Register" class="reg-btn"
+      [disabled]="!isFormValid()"  >
+      <input class ="mb-2" type="reset" value="Clear" class="reset-btn">
+    </div>
+
+      <h6 class="h6 mt-1"><small>Already a user?</small></h6>
+      <div class="col-12 mt-3">
+        <a routerLink="/account/login" class="log-btn">Login</a>
+      </div>
+    </form>
+  </div>
+  
+

@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/dashboard/admin">Car-Rent</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div *ngIf="(accountService.user$ | async) === null">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-success" routerLink="/account/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-info" routerLink="/">Login</a>
+          </li>
+          
+        </ul>
+      </div>
+      </div>
+      <div *ngIf = "(accountService.user$ | async) as user">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-danger" (click)="(logout())">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-info" (click)="(requestReturns())">Return-Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary" (click)="(AddCar())">Add Car</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+      <h2>Rental Agreements</h2>
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>CarId</th>
+            <th>Car Brand</th>
+            <th>Customer Name</th>
+            <th>Rental Duration (days)</th>
+            <th>Total Cost</th>
+            <th>Action:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let agreement of userRentalAgreements">
+            <td>{{ agreement.carId}}</td>
+            <td>{{agreement.brandName}}</td>
+            <td>{{agreement.customerName}}</td>
+            <td>{{agreement.rentalDuration}}</td>
+            <td>{{ agreement.cost }}</td>
+            <td><button class="btn btn-outline-secondary m-3" disabled>Edit</button>
+            <button class="btn btn-outline-warning m-3" (click)="deleteRecord(agreement.carId)">Delete</button></td>            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    

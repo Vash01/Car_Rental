@@ -1,0 +1,350 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\CarRentalApplication\\CarRentalApplication.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Bussiness_Layer\\Bussiness_Layer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Bussiness_Layer\\Bussiness_Layer.csproj",
+        "projectName": "Bussiness_Layer",
+        "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Bussiness_Layer\\Bussiness_Layer.csproj",
+        "packagesPath": "C:\\Users\\vanshikasingh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Bussiness_Layer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vanshikasingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\Data_Access_Layer.csproj": {
+                "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\Data_Access_Layer.csproj"
+              },
+              "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj": {
+                "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\CarRentalApplication\\CarRentalApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\CarRentalApplication\\CarRentalApplication.csproj",
+        "projectName": "CarRentalApplication",
+        "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\CarRentalApplication\\CarRentalApplication.csproj",
+        "packagesPath": "C:\\Users\\vanshikasingh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\CarRentalApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vanshikasingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Bussiness_Layer\\Bussiness_Layer.csproj": {
+                "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Bussiness_Layer\\Bussiness_Layer.csproj"
+              },
+              "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\Data_Access_Layer.csproj": {
+                "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\Data_Access_Layer.csproj"
+              },
+              "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj": {
+                "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.32, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\Data_Access_Layer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\Data_Access_Layer.csproj",
+        "projectName": "Data_Access_Layer",
+        "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\Data_Access_Layer.csproj",
+        "packagesPath": "C:\\Users\\vanshikasingh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\Data_Access_Layer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vanshikasingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj": {
+                "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj",
+        "projectName": "SharedDetails",
+        "projectPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\SharedDetails.csproj",
+        "packagesPath": "C:\\Users\\vanshikasingh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vanshikasingh\\source\\repos\\Car-Rental-Application\\CarRentalApplication\\SharedDetails\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vanshikasingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

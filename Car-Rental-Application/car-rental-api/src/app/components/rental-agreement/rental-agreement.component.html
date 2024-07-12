@@ -1,0 +1,40 @@
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div *ngIf="selectedCar" class="card">
+        <div class="card-header">
+          <h2 class="card-title">Rental Agreement for {{ selectedCar.maker }} {{ selectedCar.modelYear }}</h2>
+        </div>
+  
+        <div class="card-body">
+          <!-- Car Information -->
+          <h3>Car Information</h3>
+          <p class="card-text">Car Maker: {{ selectedCar.maker }}</p>
+          <p class="card-text">Model Year: {{ selectedCar.modelYear }}</p>
+       
+  
+          <!-- Rental Details -->
+          <h3>Rental Details</h3>
+          <p class="card-text">Rental Duration (in days): {{ rentalDuration }}</p>
+          <p class="card-text">Total Cost: {{ totalCost }}</p>
+         
+  
+          <!-- User Details -->
+          <div *ngIf="(accountService.user$ | async) as user">
+            <h3>User Details</h3>
+            <p class="card-text">User Name: {{ user.name }}</p>
+            <p class="card-text">User Email: {{ user.email }}</p>
+            
+            
+            <div class="btn-group mt-3">
+              <button class="btn btn-outline-danger mr-lg-5" routerLink="/dashboard/user">Back</button>
+              <button class="btn btn-outline-warning mr-lg-5" (click)="editRentalAgreement()">Edit</button>
+              <button class="btn btn-outline-success mr-lg-5" (click)="acceptRentalAgreement(user.email, selectedCar.id)">Accept</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
